@@ -3,6 +3,7 @@ import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
+import AboutScreen from '../screens/AboutScreen';
 import FeedScreen from '../screens/FeedScreen';
 import ReaderScreen from '../screens/ReaderScreen';
 import SavedScreen from '../screens/SavedScreen';
@@ -43,6 +44,9 @@ const searchIcon = ({ focused }: { focused: boolean }) => (
 const savedIcon = ({ focused }: { focused: boolean }) => (
   <TabIcon glyph="✂" focused={focused} />
 );
+const aboutIcon = ({ focused }: { focused: boolean }) => (
+  <TabIcon glyph="✉" focused={focused} />
+);
 
 function Tabs() {
   return (
@@ -76,6 +80,14 @@ function Tabs() {
         options={{
           tabBarLabel: 'CLIPPINGS',
           tabBarIcon: savedIcon,
+        }}
+      />
+      <Tab.Screen
+        name="About"
+        component={AboutScreen}
+        options={{
+          tabBarLabel: 'ABOUT',
+          tabBarIcon: aboutIcon,
         }}
       />
     </Tab.Navigator>
