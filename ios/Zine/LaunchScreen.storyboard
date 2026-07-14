@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreenImage" translatesAutoresizingMaskIntoConstraints="NO" id="AaF-Zy-TqL">
-                                <rect key="frame" x="27.5" y="217.5" width="320" height="252"/>
+                                <rect key="frame" x="62.5" y="208.5" width="250" height="250"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
@@ -35,9 +35,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchScreenImage" width="320" height="252"/>
+        <image name="LaunchScreenImage" width="250" height="250"/>
         <namedColor name="LaunchScreenBackgroundColor">
-            <color red="0.94509803921568625" green="0.24313725490196078" blue="0.10588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.96862745098039216" green="0.94509803921568625" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
