@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
     backgroundColor: palette.paper,
   },
   content: {
-    paddingBottom: spacing.xxl,
+    paddingBottom: 32,
   },
   heading: {
     fontFamily: fonts.black,
