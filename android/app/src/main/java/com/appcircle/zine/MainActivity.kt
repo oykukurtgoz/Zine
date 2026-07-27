@@ -1,4 +1,4 @@
-package com.oykukurtgoz.zine
+package com.appcircle.zine
 
 import android.content.pm.ActivityInfo
 import android.os.Bundle
