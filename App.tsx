@@ -9,8 +9,9 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import RootNavigator from './src/navigation/RootNavigator';
 import { palette } from './src/theme';
+import CodePush from '@appcircle/react-native-code-push';
 
-export default function App() {
+function App() {
   return (
     <GestureHandlerRootView style={styles.root}>
       <SafeAreaProvider>
@@ -27,3 +28,5 @@ const styles = StyleSheet.create({
     backgroundColor: palette.paper,
   },
 });
+
+export default CodePush(App);

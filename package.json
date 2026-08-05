@@ -10,6 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "@appcircle/react-native-code-push": "^0.1.0",
     "@react-native-async-storage/async-storage": "^3.1.1",
     "@react-navigation/bottom-tabs": "^7.16.2",
     "@react-navigation/native": "^7.2.5",
