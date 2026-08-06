@@ -11,7 +11,21 @@ import RootNavigator from './src/navigation/RootNavigator';
 import { palette } from './src/theme';
 import CodePush from '@appcircle/react-native-code-push';
 
+const codePushOptions = {
+    checkFrequency: CodePush.CheckFrequency.ON_APP_START,
+    installMode: CodePush.InstallMode.IMMEDIATE,
+    updateDialog: {
+      title: 'Güncelleme Mevcut',
+      optionalUpdateMessage: 'Yeni bir güncelleme var. Almak ister misin?',
+      optionalInstallButtonLabel: 'Evet',
+      optionalIgnoreButtonLabel: 'Daha sonra',
+      mandatoryUpdateMessage: 'Devam etmek için güncelleme gerekli.',
+      mandatoryContinueButtonLabel: 'Güncelle',
+    },
+  };
+
 function App() {
+
   return (
     <GestureHandlerRootView style={styles.root}>
       <SafeAreaProvider>
@@ -29,4 +43,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default CodePush(App);
+export default CodePush(codePushOptions)(App);
