@@ -39,6 +39,10 @@
 	<string></string>
 	<key>RCTNewArchEnabled</key>
 	<true/>
+	<key>CodePushServerURL</key>
+	<string>https://api.appcircle.io/codepush</string>
+	<key>CodePushDeploymentKey</key>
+	<string>dk_9ihpBcIQCMBQFE9u0eS_Qpu_2UMKdc670e6d-5375-4154-bba3-fcbd08e702d7</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Rubik-Black.ttf</string>

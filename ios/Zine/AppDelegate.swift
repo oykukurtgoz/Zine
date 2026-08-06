@@ -2,6 +2,7 @@ import UIKit
 import React
 import React_RCTAppDelegate
 import ReactAppDependencyProvider
+import CodePush
 
 @main
 class AppDelegate: RCTAppDelegate {
@@ -24,7 +25,7 @@ class AppDelegate: RCTAppDelegate {
     #if DEBUG
       return RCTBundleURLProvider.sharedSettings().jsBundleURL(forBundleRoot: "index")
     #else
-      return Bundle.main.url(forResource: "main", withExtension: "jsbundle")
+      return CodePush.bundleURL()
     #endif
   }
 }
