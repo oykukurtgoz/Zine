@@ -89,7 +89,7 @@ export default function FeedScreen({
     <View style={[styles.screen, { paddingTop: insets.top + spacing.s }]}>
       <View style={styles.masthead}>
         <Text style={styles.logo}>
-          ZINE Code Push saat: 22.24<Text style={{ color: accent }}>*</Text>
+          ZINE Code Push saat: 23.00<Text style={{ color: accent }}>*</Text>
         </Text>
         <Text style={styles.tagline}>a tiny hacker news reader</Text>
       </View>
